@@ -1,0 +1,190 @@
+body, h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+	padding: 0px;	
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/* topo do site*/
+
+.topo{
+	background-color: #00BFFF;
+	background: linear-gradient(180deg,#FFF, #00BFFF);
+}
+
+.logo{
+	height: 250px;
+	text-align: center;
+}
+
+.logo h1{
+	font-family: chiller;
+	font-size: 100px;
+}
+
+.menu{
+	height: 65px;
+}
+
+.menu_interno{
+	width: 200px;
+	height: 65px;
+	margin: auto;
+}
+
+.menu ul, li{
+	margin: 0px;
+	padding: 0px;	
+	list-style: none;
+}
+
+.menu li{
+	float: left;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.menu .item1{
+	border-right: 1px solid #000;
+}
+
+.menu li:hover{
+	background-color: #1E90FF;
+	cursor: pointer;
+}
+
+.foto{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: #4169E1;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+/* ===============================================================*/
+
+/* meio do site */
+
+.conteudo{
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+.conteudo1{
+	background: linear-gradient(180deg, #FFF, #7FFFD4);
+}
+
+.conteudo2{
+	background-color: #00BFFF;
+}
+
+.conteudo_interno{
+	max-width: 1000px;
+	height: 400px;
+	margin: auto;
+}
+
+.imagem{
+	width: 50%;
+	height: 400px;
+	float: left;
+}
+
+.imagem img{
+	border-right: 1px solid #000;
+	padding-right: 187px;
+}
+
+.texto{
+	width: 50%;
+	height: 300px;
+	float: right;
+}
+
+.texto1{
+	width: 100%;
+	height: 300px;
+	vertical-align: middle;
+	display: table-cell;
+	padding-left: 20px;
+	font-size: 20px;
+	font-family: arial;
+}
+
+
+/* rodapé */
+/*====================================================*/
+
+.rodape{
+	height: 200px;
+	background-color: #696969;
+	background: linear-gradient(90deg,#fff,#000);	
+	padding-left: 20px;
+	padding-right: 20px;
+	clear: both;
+}
+
+.rodape_texto{
+	width: 33.33%;
+	height: 200px;
+	float: left;
+}
+
+.rodape_logo{
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.rodape_logo h1{
+	font-family: chiller;
+	font-size: 100px;
+}
+
+.rodape_social{
+	width: 100%;
+	height: 200px;
+}
+
+.rodape_social img{
+	width: 70px;
+	padding-top: 15px;
+}
+
+.social{
+	height: 100px;
+}
+
+.social_img{
+	width: 20%;
+	height: 100px;
+	float: left;
+	line-height: 100px;
+}
+
+.social_texto{
+	width: 80%;
+	height: 100px;
+	float: left;
+	line-height: 100px;
+}
+
+.social span{
+	font-size: 18px;
+}
+
+.rodape_direitos{
+	width: 100%;
+	height: 200px;
+	text-align: right;
+	line-height: 200px;
+	color: #FFF;
+}
+
+
