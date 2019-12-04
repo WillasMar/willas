@@ -2,7 +2,6 @@ body, h1, h2, h3, h4, h5, h6{
 	margin: 0px;
 	padding: 0px;	
 }
-
 a{
 	text-decoration: none;
 	color: #000;
@@ -10,52 +9,45 @@ a{
 
 /* topo do site*/
 
-.topo{
+header{
 	background-color: #00BFFF;
 	background: linear-gradient(180deg,#FFF, #00BFFF);
 }
-
 .logo{
 	height: 250px;
 	text-align: center;
 }
-
 .logo h1{
 	font-family: chiller;
 	font-size: 100px;
+	cursor: pointer;
 }
-
 .menu{
 	height: 65px;
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-
-.menu_interno{
-	width: 200px;
-	height: 65px;
-	margin: auto;
-}
-
-.menu ul, li{
+.menu ul{
 	margin: 0px;
 	padding: 0px;	
 	list-style: none;
 }
-
 .menu li{
 	float: left;
-	padding: 20px;
+	padding: 10px 20px;
 	font-size: 20px;
 }
-
 .menu .item1{
 	border-right: 1px solid #000;
 }
-
+.menu .item2{
+	border-right: 1px solid #000;
+}
 .menu li:hover{
 	background-color: #1E90FF;
 	cursor: pointer;
 }
-
 .foto{
 	width: 200px;
 	height: 200px;
@@ -65,6 +57,7 @@ a{
 	top: 200px;
 	left: 100px;
 }
+
 /* ===============================================================*/
 
 /* meio do site */
@@ -73,38 +66,31 @@ a{
 	padding-top: 200px;
 	padding-bottom: 100px;
 }
-
 .conteudo1{
 	background: linear-gradient(180deg, #FFF, #7FFFD4);
 }
-
 .conteudo2{
 	background-color: #00BFFF;
 }
-
 .conteudo_interno{
 	max-width: 1000px;
 	height: 400px;
 	margin: auto;
 }
-
 .imagem{
 	width: 50%;
 	height: 400px;
 	float: left;
 }
-
 .imagem img{
 	border-right: 1px solid #000;
 	padding-right: 187px;
 }
-
 .texto{
 	width: 50%;
 	height: 300px;
 	float: right;
 }
-
 .texto1{
 	width: 100%;
 	height: 300px;
@@ -119,72 +105,65 @@ a{
 /* rodapé */
 /*====================================================*/
 
-.rodape{
-	height: 200px;
-	background-color: #696969;
-	background: linear-gradient(90deg,#fff,#000);	
-	padding-left: 20px;
-	padding-right: 20px;
-	clear: both;
+footer{
+	height: 250px;
+	background-color: #000;
+	display: flex;
+    align-items: center;
 }
-
-.rodape_texto{
-	width: 33.33%;
-	height: 200px;
-	float: left;
+footer .container{
+	display: flex;
+	padding: 0px;
 }
-
-.rodape_logo{
+footer .rodape_texto{
+	flex: 1;
+}
+footer .footer1{
+	border-right: 1px solid #272727;
+}
+footer .footer2{
+	border-right: 1px solid #272727;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer .footer3{
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer .footer1 .rodape_logo{
 	width: 100%;
 	height: 200px;
 	text-align: center;
 	vertical-align: middle;
 	display: table-cell;
+	color: #fff;
 }
-
-.rodape_logo h1{
+footer .footer1 .rodape_logo h1{
 	font-family: chiller;
 	font-size: 100px;
 }
-
-.rodape_social{
-	width: 100%;
-	height: 200px;
+footer .footer2 img{
+	width: 40px;
 }
-
-.rodape_social img{
-	width: 70px;
-	padding-top: 15px;
+footer .footer2 .social{
+	color: #fff;
+	display: flex;
 }
-
-.social{
-	height: 100px;
+footer .footer2 .social .social_img{
+	margin-right: 20px;
 }
-
-.social_img{
-	width: 20%;
-	height: 100px;
-	float: left;
-	line-height: 100px;
+footer .footer2 .social .social_texto{
+	font-size: 15px;
+	display: flex;
+    align-items: center;
 }
-
-.social_texto{
-	width: 80%;
-	height: 100px;
-	float: left;
-	line-height: 100px;
-}
-
-.social span{
-	font-size: 18px;
-}
-
-.rodape_direitos{
-	width: 100%;
-	height: 200px;
-	text-align: right;
-	line-height: 200px;
+footer .footer3 .rodape_direitos{
 	color: #FFF;
+}
+footer .footer3 .rodape_direitos h5{
+	font-size: 12px;
 }
 
 
