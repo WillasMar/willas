@@ -7,11 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	</head>
 	<body>		
-		<header>			
-			<div class="container logo">
-				<h1>Willas Mar</h1>
-				<h4>Desenvolvedor Web</h4>
-			</div>
+		<header>
+			<div class="logo">
+				<a href="#">
+					<img src="assets/img/logo.png">
+				</a>
+			</div>							
 			<nav class="container menu">
 				<ul>
 					<li class="item1">Início</li>
@@ -23,28 +24,13 @@
 		</header>
 
 		<div class="meio">
-			<div class="conteudo conteudo1">
-				<div class="conteudo_interno">
-					<div class="imagem">
-						<img src="assets/img/html_css.jpg" width="300px">
-					</div>
-					<div class="texto">
-						<div class="texto1">
-							Seu site será desenvolvido na mais atual das tecnologias, o HTML5 e o CSS3. Isso vai da toda a perfomance, robustez e beleza que seu site merece.
-						</div>
-					</div>
+			<div class="container conteudo conteudo1">
+				<div class="imagem">
+					<img src="assets/img/html_css.jpg" width="300px">
 				</div>
-			</div>
-
-			<div class="conteudo conteudo2">
-				<div class="conteudo_interno">
-					<div class="imagem">
-						<img src="assets/img/html_css.jpg" width="300px">
-					</div>
-					<div class="texto">
-						<div class="texto1">
-							Seu site será desenvolvido na mais atual das tecnologias, o HTML5 e o CSS3. Isso vai da toda a perfomance, robustez e beleza que seu site merece.
-						</div>
+				<div class="texto">
+					<div class="texto1">
+						Seu site será desenvolvido na mais atual das tecnologias, o HTML5 e o CSS3. Isso vai da toda a perfomance, robustez e beleza que seu site merece.
 					</div>
 				</div>
 			</div>
@@ -53,10 +39,9 @@
 		<footer>
 			<div class="container">
 				<div class="rodape_texto footer1">
-					<div class="logo rodape_logo">
-						<h1>Willas Mar</h1>
-						<h4>Desenvolvedor Web</h4>
-					</div>
+					<a href="#">
+						<img src="assets/img/logo.png">
+					</a>
 				</div>
 				<div class="rodape_texto footer2">
 					<a href="http://api.whatsapp.com/send?1=pt_BR&phone=5538988149244" target="_blank">
@@ -65,6 +50,7 @@
 								<img src="assets/img/whatsapp.png">
 							</div>
 							<div class="social_texto">
+								Contate-me no Whatsapp<br>
 								(38) 98814-9244 (Oi)
 							</div>
 						</div>
@@ -75,14 +61,45 @@
 								<img src="assets/img/facebook.png">		
 							</div>
 							<div class="social_texto">
-								https://www.facebook.com/willas.mar.g.s
+								Me encontre no Facebook...
 							</div>
 						</div>
-					</a>
+					</a>					
+					<div class="social">
+						<div class="social_img">
+							<img src="assets/img/carta.png">		
+						</div>
+						<div class="social_texto" data-toggle="modal" data-target="#janela">
+							Me mande um E-mail...
+						</div>
+					</div>	
+					<div class="modal fade" id="janela" data-backdrop="static">
+						<div class="modal-dialog modal-dialog-centered modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal"><span>&times;</span></button>
+									<h5>Enviar e-mail</h5>
+									<h6>Destino: willasanime@yahoo.com.br</h6>
+									
+								</div>
+								<div class="modal-body">
+									<form method="POST" id="form">
+										<input type="text" name="nome" id="nome" class="form-control" required placeholder="Seu nome">
+										<input type="email" name="email" class="form-control" required placeholder="Seu e-mail">
+										<textarea class="form-control" placeholder="Digite seu texto aqui..." required></textarea>
+									</form>
+								</div>
+								<div class="modal-footer justify-content-start">
+									<button class="btn btn-success" type="submit" form="form"><span>Enviar</span></button>
+									<button class="btn btn-danger" data-dismiss="modal"><span>Cancelar</span></button>
+								</div>
+							</div>
+						</div>
+					</div>				
 				</div>
 				<div class="rodape_texto footer3">
 					<div class="rodape_direitos">
-						<h5>Willas, Especialista em Web ® 2018. Todos os direitos reservados</h5>
+						<h5>Willas Mar, Especialista em Web, desde 2018.</h5>
 					</div>
 				</div>
 			</div>			
